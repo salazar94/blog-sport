@@ -1,33 +1,53 @@
 <!DOCTYPE html>
 <html lang="es-LA">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,  maximum-scale=1.0, user-scale=0"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <a href="#"> <img src="./assets/menu.svg" alt="burguer menu"> </a>
-        <nav class="header__menu">
-
-        </nav>
-        <figure class="header__search">
-            <a href="#">
-                <img src="" alt="Lupa">
-            </a>
-        </figure>
+      <a href="#">
+        <img src="./assets/menu.svg" alt="burguer menu" width="30" />
+      </a>
+      <nav class="header__menu"></nav>
+      <figure class="header__search">
+        <a href="#">
+          <img src="./assets/loupe.svg" alt="Lupa" width="20" />
+        </a>
+      </figure>
     </header>
-</body>
-<!-- 
-<section class="top-selling">
-   <li class="card">
-   
-   </li>
-</section> -->
-
-
+    <main>
+      <h2 class="title">Hello <b class="title--bold">Rathan</b></h2>
+      <p class="datetime">
+        <time datetime="08:29">08:20 Am</time>
+        <span> | </span>
+        <time datetime="2021-08-20">20 feb 2020 </time>
+      </p>
+      <p class="notice">
+        You were reading <b>"Covid-19" Pandemic</b> on yesterday
+      </p>
+      <section class="swipe-container" id="s">
+        <p class="swipe-container__title">Swipe to continue</p>
+        <div class="swipe-container__item" draggable="true" id="swipe">
+          <img
+            src="./assets/three-chevron-arrows-pointing-right.svg"
+            alt="arrow"
+            width="20"
+          />
+        </div>
+      </section>
+    </main>
+    <script src="item.js" defer></script>
+  </body>
 </html>
