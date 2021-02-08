@@ -17,7 +17,7 @@
 
   <body>
     <header class="header">
-      <a href="#">
+      <a href="./elements.html">
         <img src="./assets/menu.svg" alt="burguer menu" width="30" />
       </a>
       <nav class="header__menu"></nav>
@@ -27,7 +27,7 @@
         </a>
       </figure>
     </header>
-    <main>
+    <main class="main">
       <h2 class="title">Hello <b class="title--bold">Rathan</b></h2>
       <p class="datetime">
         <time datetime="08:29">08:20 Am</time>
@@ -37,7 +37,7 @@
       <p class="notice">
         You were reading <b>"Covid-19" Pandemic</b> on yesterday
       </p>
-      <section class="swipe-container" id="s">
+      <section class="card-topics card-topics--center-swipe " id="s">
         <p class="swipe-container__title">Swipe to continue</p>
         <div class="swipe-container__item" draggable="true" id="swipe">
           <img
@@ -47,6 +47,36 @@
           />
         </div>
       </section>
+      <ul class="topics">
+        <h3 class="topics__title">Choose topic</h3>
+        <li class="card-topics card-topics--center card-topics--sports">
+          <img
+            src="./assets/baloncesto.svg"
+            alt="sdfg"
+            class="card-topics__img"
+            width="40"
+          />
+          <h4 class="card-topics__title">Sports</h4>
+        </li>
+        <li class="card-topics card-topics--center card-topics--entertainment">
+          <img
+            src="./assets/claqueta.svg"
+            alt="sdfg"
+            class="card-topics__img"
+            width="40"
+          />
+          <h4 class="card-topics__title">Entertainment</h4>
+        </li>
+        <li class="card-topics card-topics--center card-topics--tech">
+          <img
+            src="./assets/lampara.svg"
+            alt="sdfg"
+            class="card-topics__img"
+            width="40"
+          />
+          <h4 class="card-topics__title">Technology</h4>
+        </li>
+      </ul>
     </main>
     <script src="item.js" defer></script>
   </body>

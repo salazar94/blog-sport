@@ -1,0 +1,33 @@
+.news {
+  display: flex;
+  overflow-x: scroll;
+  width: 100%;  
+  &__card {    
+    border-radius: 10px;
+    list-style: none;
+    // height: 250px;
+    position: relative;
+    // max-height: 300px;
+    max-width: 400px;
+    min-height: 200px;
+    min-width: 300px;
+    overflow: hidden;
+    margin-right: 20px;
+    // width: 200px;    
+  }
+  &__image {
+    height: 100%;
+    object-fit: cover;
+    // position: relative;
+    width: 100%;
+  }
+  &__information {
+    background-color: $secondaryColor;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    z-index: 2;
+  }
+}

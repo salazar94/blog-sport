@@ -1,9 +1,8 @@
 .header {
   display: flex;
   justify-content: space-between;
-  // width: 90vw;
-  // padding: 0 40px;
-  padding-top: 40px;
+  align-items: center;
+  padding-top: 20px;
   &__search {
     display: flex;
     align-items: center;
@@ -11,9 +10,33 @@
     width: 40px;
     height: 40px;
     border-radius: 5px;
+    margin: 0;
     background-color: $secondaryColor;
   }
-  &__date{
+  &__date {
     display: flex;
+  }
+  &__list {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    padding: 0;
+    display: flex;
+    overflow-y: scroll;
+    width: 400px;
+    scrollbar-width: none;
+  }
+  &__menu {
+    overflow-y: hidden;
+  }
+  &__item {
+    text-decoration: none;
+    list-style: none;
+    margin-right: 50px;
+    height: 30px;
+    &--active {
+      --line-color: #c23f3f;
+      background-image: paint(placeholder-box);
+    }
   }
 }

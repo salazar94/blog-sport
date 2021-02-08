@@ -1,0 +1,33 @@
+.card-topics {
+  background-color: $secondaryColor;
+  height: $heightTopics;
+  position: relative;
+  display: flex;
+  width: 85%;
+  border-radius: 20px;
+  &--center-swipe {
+    width: calc(85% + #{$cardTopicPadding * 2});
+  }
+  &__title {
+    margin-left: 40px;
+  }
+  &--center {
+    padding: 0 $cardTopicPadding;
+    align-items: center;
+  }
+  &__img {
+    width: 25px;
+    height: 25px;
+    box-shadow: 0 0 0px 15px white;
+    border-radius: 19px;
+  }
+  &--sports {
+    background-color: hsla(26, 100%, 96%, 1);
+  }
+  &--tech {
+    background-color: #f2e9fe;
+  }
+  &--entertainment {
+    background-color: #e0fff0;
+  }
+}

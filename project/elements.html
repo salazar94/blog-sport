@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="./index.html">
+        <img src="./assets/left-arrow.svg" alt="burguer menu" width="30" />
+      </a>
+    </header>
+    <h1>Sports</h1>
+    <nav class="header__menu">
+      <ul class="header__list">
+        <li class="header__item header__item--active">Cricket</li>
+        <li class="header__item">NBA</li>
+        <li class="header__item">Football</li>
+        <li class="header__item">Tennis</li>
+        <li class="header__item">Soccer</li>
+        <li class="header__item"></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="news">        
+        <article class="news__card">
+          <img src="./assets/i.jpg" alt="" class="news__image" width="120" />
+          <a href="#" class="news__information">
+            <p class="news__caption">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <small class="news__date">Date</small>
+          </a>
+        </article>
+
+        <article class="news__card">
+          <img src="./assets/i.jpg" alt="" class="news__image" width="120" />
+          <a href="#" class="news__information">
+            <p class="news__caption">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <small class="news__date">Date</small>
+          </a>
+        </article>
+
+        <article class="news__card">
+          <img src="./assets/i.jpg" alt="" class="news__image" width="120" />
+          <a href="#" class="news__information">
+            <p class="news__caption">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <small class="news__date">Date</small>
+          </a>
+        </article>
+
+        <article class="news__card">
+          <img src="./assets/i.jpg" alt="" class="news__image" width="120" />
+          <a href="#" class="news__information">
+            <p class="news__caption">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <small class="news__date">Date</small>
+          </a>
+        </article>
+        <article class="news__card">
+          <img src="./assets/i.jpg" alt="" class="news__image" width="120" />
+          <a href="#" class="news__information">
+            <p class="news__caption">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <small class="news__date">Date</small>
+          </a>
+        </article>
+      </section>
+    </main>
+    <script>
+      if ("registerProperty" in CSS) {
+        CSS.registerProperty({
+          name: "--line-color",
+          syntax: "<color>",
+          inherits: true,
+          initialValue: "rebeccapurple",
+        });
+        console.log("asdf");
+      }
+      if ("paintWorklet" in CSS) {
+        CSS.paintWorklet.addModule("as.js");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+.swipe-container {
+  position: relative;  
+  &__title {
+    margin: auto;   
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: 75px;
+    position: absolute;
+    z-index: 2;
+    box-shadow: 0 0 3px 0px $primaryColor;
+    height: $heightTopics - 10px;
+    margin-top: 5px;
+    background-color: $primaryColor;
+  }
+}
